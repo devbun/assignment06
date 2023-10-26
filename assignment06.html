@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Assignment06 Sample</h1>
+    </header>
+    <main>
+        <form action="thx.html" id="form-course">
+            <div class="form-line">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" >
+            </div>
+
+            <div class="form-line">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" >
+            </div>
+
+            <div class="form-line">
+                <label for="sid">Student ID:</label>
+                <input type="text" id="sid" name="sid" >
+            </div>
+
+            <div class="form-line">
+                <label for="pword">Password: </label>
+                <input type="password" name="pword" id="pword">
+                <span class="button" id="Show-pw" onclick="toggleVis('pword', 'Show-pw')">Show</span>
+            </div>
+
+
+            <div class="form-line">
+                <label for="date">Date: </label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div class="form-line">
+                <label for="course">Course: </label>
+                <select name="course" id="course">
+                    <option value="choose" selected disabled>Choose your course:</option>
+                    <option value="COMP1850">COMP1850</option>
+                    <option value="COMP2132">COMP2132</option>
+                    <option value="COMP2913">COMP2913</option>
+                    <option value="COMP3012">COMP3012</option>
+                    <option value="COMP3015">COMP3015</option>
+                </select>
+            </div>
+
+            <div id="error-message"></div>
+
+
+            <input type="submit" value="Submit">
+          </form> 
+    </main>
+</body>
+</html>
